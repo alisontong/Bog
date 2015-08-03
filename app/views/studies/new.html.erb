@@ -1,0 +1,21 @@
+<h1>New Study</h1>
+<%= form_for :study, url: studies_path do |f| %>
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+ 
+  <p>
+    <%= f.label :text %><br>
+    <%= f.text_area :text %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+<%= form_for :study, url: studies_path do |f| %>
+  ...
+<% end %>
+ 
+<%= link_to 'Back', studies_path %>
